@@ -24,7 +24,7 @@ export const AIPredictionCard: React.FC = () => {
         </div>
         <div className="flex items-center space-x-1.5">
           <span className="font-tech text-[10px] text-amber-400 bg-amber-950/50 px-2 py-0.5 rounded border border-amber-500/40 hidden sm:inline">
-            CONFIDENCE: {prediction.confidence}%
+            CONFIDENCE: {prediction.successProbability}%
           </span>
           <button
             onClick={() => setIsRightDrawerOpen(false)}
