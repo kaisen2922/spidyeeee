@@ -75,6 +75,7 @@ interface HeroStoreState {
   setHistoryRange: (range: HistoryRange) => void;
   toggle3DMode: () => void;
   toggleTerrainMode: () => void;
+  toggleSound: () => void;
   toggleCameraLock: () => void;
   setCameraLocked: (locked: boolean) => void;
   clearMapFlyToTarget: () => void;
@@ -161,7 +162,6 @@ export const useHeroStore = create<HeroStoreState>((set, get) => ({
       activityLogs, 
       timerCounter, 
       isReplayActive,
-      heatmapPoints,
       units 
     } = get();
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as maplibregl from 'maplibre-gl';
-import { Move, Lock, Unlock, Target, Plus, Minus, Compass, Box, Globe } from 'lucide-react';
+import { Lock, Unlock, Target, Plus, Minus, Compass, Box, Globe } from 'lucide-react';
 import { useHeroStore } from '../../store/useHeroStore';
 import { SPIDERMAN_FREQUENT_LOCATIONS, GLOBAL_SPIDER_HEROES } from '../../services/aiSimulator';
 
@@ -26,7 +26,6 @@ export const LiveCityMap: React.FC = () => {
     clearMapFlyToTarget,
     isCameraLockedOnSpiderMan,
     toggleCameraLock,
-    setCameraLocked,
     centerMapOnHero,
     flyToCoords,
     showGreenSightings,
